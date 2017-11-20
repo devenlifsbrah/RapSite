@@ -1,0 +1,454 @@
+<html>
+<head>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css?family=Saira+Condensed" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+
+</head>
+
+
+
+<style>
+*{
+margin:0px;
+padding: 0px;
+
+}
+.container{
+overflow:auto;
+max-height:auto;
+}
+.content{
+overflow:auto;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    width: 8%;
+    background-color: black;
+    height: 100%;
+    overflow: hidden;
+	float:left;
+	opacity:0.9;
+	
+}
+
+
+li a {
+    display: block;
+    color: white;
+    padding: 10%;
+    text-decoration: none;
+	line-height:90%;
+	margin-bottom:20px;
+    position:relative;
+font-family: 'Saira Condensed', sans-serif;
+    font-size:16px;
+	text-align:right;
+}
+
+
+
+li a:hover {
+    color: black;
+	transition:0.5s;
+	opacity:0.5;
+	background-color:#f1f1f1;
+}
+.content{
+background-color:black;
+height:100%;
+width:92%;
+float:right;
+position:relative;
+background-repeat:no-repeat;
+}
+.slider {
+position:absolute;
+
+}
+.border{
+border-color:white;
+}
+.logo{
+margin:5%;
+margin-bottom:120px;
+
+
+}
+
+.halfer{
+width:40%;
+float:right;
+background-image:url("prod2.jpg");
+background-repeat:no-repeat;
+    background-size: cover;
+	height:100%;
+	-webkit-animation-duration: 2.5s;
+  -webkit-animation-delay: 1s;
+
+}
+.halfer2{
+width:50%;
+float:left;
+max-height:auto;
+
+}
+.TitleOfContent{
+-webkit-animation-duration: 2.5s;
+  -webkit-animation-delay: 1s;
+color:#696969;
+font-size:36px;
+font-family: 'Saira Condensed', sans-serif;
+padding-left:20px;
+padding:right:20px;
+position:relative;
+top:180px;
+left:35px;
+
+}
+.paragraph{
+padding:5%;
+font-family: 'Saira Condensed', sans-serif;
+line-height:180%;
+color:white;
+font-size:16px;
+position:relative;
+top:180px;
+left:35px;
+}
+img{
+}
+
+@media screen and (max-width:1024px) {
+.content{
+max-height:auto;
+width:100%;
+float:none;
+text-align:center;
+}
+.logo{
+margin-right:10px;
+margin-top:15px;
+margin-bottom:20px;
+}
+ul{
+float:none;
+width:100%;
+text-align:right;
+height:70px;
+
+}
+li a{
+font-size:20px;
+float:none;
+display:block;
+line-height:20px;
+padding:20px;
+text-align:right;
+}
+
+
+.halfer{
+width:100%;
+float:none;
+background-image:url("prod2.jpg");
+background-repeat:no-repeat;
+    background-size: cover;
+	height:40%;
+	-webkit-animation-duration: 2.5s;
+  -webkit-animation-delay: 1s;
+
+}
+.halfer2{
+float:none;
+width:100%;
+
+
+}
+.TitleOfContent{
+top:0px;
+left:0px;
+
+}
+.logo{
+
+}
+
+.paragraph{
+padding:5%;
+font-family: 'Saira Condensed', sans-serif;
+line-height:180%;
+color:white;
+font-size:16px;
+position:relative;
+top:0px;
+left:0px;
+}
+
+.hamburger{
+padding:20px;
+float:left;
+width:30%;
+}
+
+
+span{
+display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+
+}
+
+
+
+}
+
+
+</style>
+
+<head>
+<script
+  src="https://code.jquery.com/ui/1.8.23/jquery-ui.js"
+  integrity="sha256-lFA8dPmfmR4AQorTbla7C2W0aborhztLt0IQFLAVBTQ="
+  crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+</head>
+
+<script>
+
+$(document).ready(function() {
+  $("#news").mouseover(function (){
+   $(this).animate({left:"20px"});
+   });
+});
+$(document).ready(function() {
+  $("#news").mouseleave(function (){
+   $(this).animate({left:"0px"});
+   });
+});
+
+
+$(document).ready(function() {
+  $("#home").mouseover(function (){
+   $(this).animate({left:"20px"});
+   });
+});
+$(document).ready(function() {
+  $("#home").mouseleave(function (){
+   $(this).animate({left:"0px"});
+   });
+});
+
+$(document).ready(function() {
+  $("#contact").mouseover(function (){
+   $(this).animate({left:"20px"});
+   });
+});
+$(document).ready(function() {
+  $("#contact").mouseleave(function (){
+   $(this).animate({left:"0px"});
+   });
+});
+
+
+$(document).ready(function() {
+  $("#about").mouseover(function (){
+   $(this).animate({left:"20px"});
+   });
+});
+$(document).ready(function() {
+  $("#about").mouseleave(function (){
+   $(this).animate({left:"0px"});
+   });
+});
+
+
+
+$(document).ready(function() {
+  $("#events").mouseover(function (){
+   $(this).animate({left:"20px"});
+   });
+});
+$(document).ready(function() {
+  $("#events").mouseleave(function (){
+   $(this).animate({left:"0px"});
+   });
+});
+
+
+$(document).ready(function() {
+  $("#gallery").mouseover(function (){
+   $(this).animate({left:"20px"});
+   });
+});
+$(document).ready(function() {
+  $("#gallery").mouseleave(function (){
+   $(this).animate({left:"0px"});
+   });
+});
+
+
+
+
+
+
+
+
+</script>
+
+
+<script>
+
+window.onload = function () {
+
+
+ 
+
+/*Navbar button click event */
+ var hamburger = document.getElementsByTagName('SPAN')[0];
+ var hamburger2 = document.getElementsByTagName('SPAN')[1];
+ var hamburger3 = document.getElementsByTagName('SPAN')[2];
+/* modifying navbar function */
+function changec(callback) {
+       var xDiv = document.getElementsByTagName('UL')[0];
+       var li = document.getElementsByTagName('LI')[0];
+       if (xDiv.style.height == "70px"){
+           xDiv.style.height = '600px';
+		   
+		   }
+       else {
+           xDiv.style.height = '70px';
+			}
+	
+
+	
+
+}
+function normalizer () {
+       var UL = document.getElementsByTagName('SPAN')[0];
+       UL.style.height = '1400';
+
+
+}
+
+/* execution */
+hamburger.addEventListener('click', changec);
+hamburger2.addEventListener('click', changec);
+hamburger3.addEventListener('click', changec);
+
+
+
+}
+ function resizer () {
+//your code
+    var vDiv = document.getElementsByTagName('UL')[0];
+    if (window.innerWidth > 960) {
+	           vDiv.style.height = '100%';
+	}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+<body>
+<div class = "container">
+
+
+<ul>
+<div class = "hamburger">
+<span></span>
+<span></span>
+<span></span>
+</div>
+<div class = "log">
+<img src = "newlogo.jpg" class = "logo"> </img>
+</div>
+
+<li><a class="active" href="home.html" id = "home">Home</a></li>
+  <li><a href="gallery2.html" id = "gallery">Our records</a></li>
+  <li><a href="WorkingAbout.html" id = "about">About</a></li>
+  <li><a href="contact.html" id = "contact">Contact Us</a></li>
+  <li><a href="ProdWorking.html" id = "producers">Producers</a></li>
+    <li><a href="Event3.html" id = "events">Events</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class = "content">
+<div class = "halfer animated slideInUp">
+</div>
+
+
+
+<div class = "halfer2">
+<div class = "border">
+<p class = "TitleOfContent animated fadeIn">
+Our production
+</div>
+<p class = "paragraph animated slideInDown">
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</p>
+
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+
+</body>
+
+
+
+</html>

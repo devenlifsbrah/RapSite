@@ -1,0 +1,697 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+ <head>
+<script
+  src="https://code.jquery.com/ui/1.8.23/jquery-ui.js"
+  integrity="sha256-lFA8dPmfmR4AQorTbla7C2W0aborhztLt0IQFLAVBTQ="
+  crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Saira+Condensed" rel="stylesheet">
+
+
+</head>
+ 
+
+
+
+
+<style>
+*{
+margin:0px;
+padding: 0px;
+
+}
+
+.mobilepic{
+display:none;
+}
+
+
+#box {
+    list-style-type: none;
+    padding: 0;
+    width: 8%;
+    background-color: black;
+    overflow: hidden;
+	float:left;
+	opacity:0.9;
+	height:100%;
+	
+}
+
+
+li a {
+    display: block;
+    color: white;
+    padding: 10%;
+    text-decoration: none;
+	line-height:90%;
+	margin-bottom:20px;
+    position:relative;
+font-family: 'Saira Condensed', sans-serif;
+    font-size:16px;
+	text-align:right;
+}
+
+.mobPara{
+display:none;
+}
+
+li a:hover {
+    color: black;
+	transition:0.5s;
+	opacity:0.5;
+	background-color:#f1f1f1;
+}
+.content{
+background-color:black;
+height:100%;
+width:92%;
+float:right;
+position:relative;
+background-repeat:no-repeat;
+overflow:auto;
+}
+.slider {
+position:absolute;
+
+}
+img{
+height:auto;
+width:100%;
+}
+.logo{
+margin:5%;
+heigt:auto;
+width:auto;
+margin-bottom:120px;
+}
+
+.halfer{
+ filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+width:40%;
+float:right;
+background-image:url("kumo1.jpg");
+background-repeat:no-repeat;
+    background-size: cover;
+	height:100%;
+}
+.half
+{
+display:none;
+filter: gray; /* IE6-9 */
+-webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+width:40%;
+float:right;
+background-image:url("ArtistSide.jpg");
+background-repeat:no-repeat;
+background-size: cover;
+height:100%;
+}
+
+
+
+.Prod2{
+background-image:url("prod2.jpg");
+}
+.halfer2{
+width:50%;
+float:left;
+}
+
+.TitleOfContent{
+color:#696969;
+font-size:62px;
+font-family: 'Saira Condensed', sans-serif;
+padding-left:10px;
+padding:right:20px;
+position:relative;
+}
+.paragraph{
+padding:5%;
+font-family: 'Saira Condensed', sans-serif;
+line-height:180%;
+color:white;
+font-size:16px;
+position:relative;
+display:none;
+
+}
+
+.paragraph2{
+padding:5%;
+font-family: 'Saira Condensed', sans-serif;
+line-height:180%;
+color:white;
+font-size:16px;
+position:relative;
+top:10px;
+display:none;
+
+}
+
+
+
+
+.ProducersLeft {
+position:relative;
+float:left;
+margin-left:10%;
+border-radius:5%;
+width:30%;
+height:50%;
+filter: gray; /* IE6-9 */
+-webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+}
+.ProducersRight {
+position:relative;
+float:left;
+margin-left:10%;
+border-radius:5%;
+width:30%;
+height:50%;
+filter: gray; /* IE6-9 */
+-webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+}
+
+
+.halfer3{
+height:60%;
+}
+.mobile{
+display:none;
+
+}
+
+.mobiletitle{
+width:100%;
+text-align:center;
+padding:20px;
+font-family: 'Saira Condensed', sans-serif;
+display:none;
+
+}
+
+
+@media screen and (max-width:1000px) {
+.container{
+}
+.content{
+max-height:auto;
+min-width:100%;
+float:none;
+text-align:center;
+overflow:auto;
+}
+.logo{
+margin-right:10px;
+margin-top:15px;
+margin-bottom:20px;
+
+}
+img{
+max-width:80%
+height:auto;
+}
+#box{
+
+float:none;
+width:100%;
+text-align:center;
+height:70px;
+transition:0.6s;
+}
+
+
+
+
+span{
+display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+
+}
+.hamburger{
+padding:20px;
+float:left;
+max-width:auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.button{
+margin:10px;
+display:block;
+transition:0.5s;
+color: white;
+    text-align: center;
+    text-decoration: none;
+	padding:5px;
+    display: inline-block;
+    font-size: 25px;kj
+    
+    cursor: pointer;
+    border-radius:5px;
+    background-color: white;
+	opacity:0.5;
+    color: black;
+    border: 2px solid #555555;
+}
+
+li a{
+font-size:20px;
+float:none;
+display:block;
+line-height:20px;
+padding:20px;
+text-align:right;
+}
+
+
+.TitleOfContent{
+margin-left:0px;
+margin:0%;
+width:100%;
+font-size:32px;
+top:200px;
+left:0px;
+text-align:center;
+background-color:black;
+opacity:0.6;
+}
+.halfer2{
+width:100%;
+float:none;
+padding:5px;
+
+}
+
+
+.ProducersLeft {
+border-radius:0px;
+height:0px;
+width:0px;
+padding:0px;
+
+float:none;
+background-image:none;
+
+}
+.mobilepic{
+display:block; 
+
+}
+.mobiletitle{
+width:100%;
+text-align:center;
+padding:20px;
+font-family: 'Saira Condensed', sans-serif;
+display:block;
+color:#CCCCCC;
+font-size:62px;
+}
+.ProducersRight {
+padding:0px;
+border-radius:0px;
+width:0px;
+height:0px;
+background-image:none;
+
+float:none;
+}
+.desktop{
+display:none;
+}
+
+.half{
+display:none;
+}
+.halfer{
+display:none;
+}
+.mobPara{
+font-family: 'Titillium Web', sans-serif;
+line-height:180%;
+color:white;
+font-size:14px;
+display:block;
+position:relative;
+padding:20px;
+}
+
+.halfer3{
+height:100%;
+text-align:center;
+width:100%;
+}
+
+.log{
+text-align:right;
+}
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+</style>
+
+
+
+<script>
+
+$(document).ready(function() {
+  $("#news").mouseover(function (){
+   $(this).stop(true).animate({left:"20px"});
+   });
+});
+$(document).ready(function() {
+  $("#news").mouseleave(function (){
+   $(this).stop(true).animate({left:"0px"});
+   });
+});
+
+
+$(document).ready(function() {
+  $("#home").mouseover(function (){
+   $(this).stop(true).animate({left:"20px"});
+   });
+});
+$(document).ready(function() {
+  $("#home").mouseleave(function (){
+   $(this).stop(true).animate({left:"0px"});
+   });
+});
+
+$(document).ready(function() {
+  $("#contact").mouseover(function (){
+   $(this).stop(true).animate({left:"20px"});
+   });
+});
+$(document).ready(function() {
+  $("#contact").mouseleave(function (){
+   $(this).stop(true).animate({left:"0px"});
+   });
+});
+
+
+$(document).ready(function() {
+  $("#about").mouseover(function (){
+   $(this).stop(true).animate({left:"20px"});
+   });
+});
+$(document).ready(function() {
+  $("#about").mouseleave(function (){
+   $(this).stop(true).animate({left:"0px"});
+   });
+});
+
+
+
+$(document).ready(function() {
+  $("#events").mouseover(function (){
+   $(this).stop(true).animate({left:"20px"});
+   });
+});
+$(document).ready(function() {
+  $("#events").mouseleave(function (){
+   $(this).stop(true).animate({left:"0px"});
+   });
+});
+
+
+$(document).ready(function() {
+  $("#contact").mouseover(function (){
+   $(this).stop(true).animate({left:"20px"});
+   });
+});
+$(document).ready(function() {
+  $("#contact").mouseleave(function (){
+   $(this).stop(true).animate({left:"0px"});
+   });
+});
+
+
+$(document).ready(function() {
+  $("#producers").mouseover(function (){
+   $(this).stop(true).animate({left:"20px"});
+   });
+});
+$(document).ready(function() {
+  $("#producers").mouseleave(function (){
+   $(this).stop(true).animate({left:"0px"});
+   });
+});
+$(document).ready(function() {
+     $('.halfer').addClass('animated fadeInRight');
+
+});
+
+
+$(document).ready(function() {
+  $(".ProducersLeft").click(function (){
+    $('.paragraph').fadeIn(1500);
+	$('.halfer').fadeIn(1500);	    
+	$('.half').stop(true).fadeOut(1);
+	    $('.paragraph2').stop(true).fadeOut(1);
+   $(".ProducersRight").animate({top:'0', left:"0"}, 1500);
+   $(this).animate({top:"120px", left:"90px" },1500);
+
+   });
+});
+
+$(document).ready(function() {
+  $(".ProducersRight").click(function (){
+   $('.paragraph2').fadeIn(1500);
+    $('.half').fadeIn(1500);	    
+	$('.halfer').stop(true).fadeOut(1);
+
+	
+	    $('.paragraph').stop(true).fadeOut(1);
+   $(".ProducersLeft").animate({top:'0', left:"0"}, 1500);
+   $(this).animate({top:"150px", left:"-120px"}, 1500);
+   $('.halfer').addClass('animated fadeInRight');
+
+   });
+});
+
+
+</script>
+
+<script>
+
+
+window.onload = function () {
+
+
+ 
+
+/*Navbar button click event */
+ var hamburger = document.getElementsByTagName('SPAN')[0];
+ var hamburger2 = document.getElementsByTagName('SPAN')[1];
+ var hamburger3 = document.getElementsByTagName('SPAN')[2];
+/* modifying navbar function */
+function changec(callback) {
+       var xDiv = document.getElementsByTagName('UL')[0];
+       var li = document.getElementsByTagName('LI')[0];
+       if (xDiv.style.height == "70px"){
+           xDiv.style.height = '600px';
+		   
+		   }
+       else {
+           xDiv.style.height = '70px';
+			}
+	
+
+	
+
+}
+function normalizer () {
+       var UL = document.getElementsByTagName('SPAN')[0];
+       UL.style.height = '100%';
+
+
+}
+
+/* execution */
+hamburger.addEventListener('click', changec);
+hamburger2.addEventListener('click', changec);
+hamburger3.addEventListener('click', changec);
+
+
+
+}
+ function resizer () {
+//your code
+    var Para = document.getElementsByClassName('DesktopHalf')[0];
+    var half = document.getElementsByClassName('half')[0];
+    var vDiv = document.getElementsByTagName('UL')[0];
+    if (window.innerWidth > 960) {
+	           vDiv.style.height = '100%';
+			   
+	} 
+	if(window.innerWidth < 960) {
+	Para.style.display = "none";
+    half.style.display = "none";
+	}
+
+
+}
+
+
+
+</script>
+<body onresize = "resizer()">
+<div class = "container">
+
+
+<ul id = "box"  >
+<div class = "hamburger">
+<span onclick="changec()"></span>
+<span onclick="changec()"></span>
+<span onclick="changec()"></span>
+</div>
+<div class = "log">
+<img src = "newlogo.jpg" class = "logo"> </img>
+</div>
+
+<li><a class="active" href="home.html" id = "home">Home</a></li>
+  <li><a href="gallery2.html" id = "gallery">Our records</a></li>
+  <li><a href="WorkingAbout.html" id = "about">About</a></li>
+  <li><a href="contact.html" id = "contact">Contact Us</a></li>
+  <li><a href="ProdWorking.html" id = "producers">Producers</a></li>
+    <li><a href="Event3.html" id = "events">Events</a></li>
+
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+<div class = "content">
+<div class = "halfer2">
+  <div class = "halfer3">
+  <br>
+  <br>
+  <div class = "frame">
+<div class = "ProducersLeft" >
+<img src="kumoo.jpg"></img>
+</div>
+
+<center>
+<img src = "EventPic.jpg" class = "mobilepic"></img>
+</center>
+
+<div class = "mobiletitle">
+<p class = >About Us</p>
+</div>
+<p class = "mobPara">
+
+
+
+
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</p>
+
+<div class = "ProducersRight" >
+<img src="second.jpg"></img>
+
+</div>
+<center>
+<img src = "EventPic.jpg" class = "mobilepic"></img>
+</center>
+<div class = "mobiletitle">
+<p class = >About Us</p>
+</div>
+<p class = "mobPara">
+
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</p>
+
+</div>
+
+
+
+
+</div>
+<div class = "DesktopHalf">
+<p class = "paragraph desktop">
+
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</p>
+<p class = "paragraph2 desktop">
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</p>
+
+</div>
+
+</div>
+
+<div class = "halfer">
+</div>
+<div class = "half">
+</div>
+</div>
+
+</div>
+
+
+
+</body>
+
+
+
+</html>
